@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class  PromedioGastosSemanales{
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar el número de semanas
+        System.out.print("Ingrese el número de semanas para calcular el promedio de gastos: ");
+        int numeroSemanas = scanner.nextInt();
+
+        // Variables para acumular los gastos
+        double totalGastos = 0;
+
+        // Registrar los gastos por semana
+        for (int i = 1; i <= numeroSemanas; i++) {
+            System.out.print("Ingrese los gastos de la semana " + i + ": $");
+            double gastosSemana = scanner.nextDouble();
+            totalGastos += gastosSemana;
+        }
+
+        // Calcular el promedio
+        double promedioGastos = totalGastos / numeroSemanas;
+
+        // Mostrar resultados
+        System.out.println("\n--- Resultados ---");
+        System.out.println("
+
+
+
+
+
